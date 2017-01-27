@@ -6,10 +6,15 @@
 </head>
 <body>
 
-<!-- This is the document the participant sees -->
+<!-- This is the document the facilitator to control what the participant sees -->
 
-<!-- Container to hold what is sent from Oz -->
-<div class="container" id="container"></div>
+<!-- Container which will have the markup to be sent to Dorthy -->
+<div class="container" id="container">
+	<p>Todo</p>
+	<p>This is a to do list!</p>
+</div>
+
+<button id="update">Update</button>
 
 <!-- Dependencies -->
 <script
@@ -17,6 +22,8 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-<script src="/index.js"></script>
+<script src="/oz.js"></script>
+<script></script>
 </body>
 </html>
+
