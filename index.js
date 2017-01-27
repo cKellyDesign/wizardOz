@@ -36,8 +36,8 @@ io.sockets.on('connection', function (socket) {
 		io.sockets.emit('update', content);
 	});
 
-	// Listen for Dorthy to send her content
-	socket.on('dorthy', function () {
+	// Listen for Dorothy to send her content
+	socket.on('dorothy', function () {
 		io.sockets.emit('update', content);
 	})
 });
