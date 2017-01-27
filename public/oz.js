@@ -14,6 +14,14 @@ function Oz () {
 		var toSend = $('#container').html();
 		self.socket.emit('content', toSend);
 	}
+
+
+
+	$('#update').on('click', function (e) {
+		e.preventDefault();
+		self.copyMarkup();
+	});
+
 }
 
 window.oz = new Oz();
