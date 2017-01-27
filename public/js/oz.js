@@ -16,6 +16,8 @@ function Oz () {
 	}
 
 
+	CKEDITOR.replace('editor');
+
 
 	$('#update').on('click', function (e) {
 		e.preventDefault();
