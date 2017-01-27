@@ -1,4 +1,4 @@
-function Dorthy () {
+function Dorothy () {
 	var self = this;
 
 	// initialize IO
@@ -6,7 +6,7 @@ function Dorthy () {
 
 	// When connected, send dorthy event
 	this.socket.on('connect', function() {
-		self.socket.emit('dorthy');
+		self.socket.emit('dorothy');
 	});
 
 	// Listen for update to content
@@ -15,4 +15,4 @@ function Dorthy () {
 	});
 }
 
-window.dorthy = new Dorthy();
+window.dorothy = new Dorothy();
