@@ -1,5 +1,6 @@
 function Oz () {
 	var self = this;
+	CKEDITOR.replace('editor');
 
 	// initialize IO
 	this.socket = io();
@@ -11,11 +12,11 @@ function Oz () {
 
 	// Function to copy content and send to server
 	this.copyMarkup = function () {
-		var toSend = $('#container').html();
-		self.socket.emit('content', toSend);
+		var data = CKEDITOR.instances.editor.getData();
+		console.log(data);
+		$('#container').html(data);
+		self.socket.emit('content', data);
 	}
-
-
 
 	$('#update').on('click', function (e) {
 		e.preventDefault();
