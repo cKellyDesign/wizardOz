@@ -1,16 +1,70 @@
+<!-- This is Dorothy. Say hi to Dorothy. -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Test Proto</title>
-   
+  <meta charset="UTF-8">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+
+    <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/8266393845.js"></script>
+
+  <title>VeeTee: Voice Text Editor</title>
 </head>
 <body>
 
 <!-- This is the document the participant sees -->
+<div class="container">
+  <!-- Editor panel -->
+  <div class="oz-editor one-third column">
+    <h5>Editing Options</h5>
+        <div class="btn-group">
+      <button><i class="fa fa-undo fa-border" aria-hidden="true"></i>
+  Undo</button>
+      <button><i class="fa fa-repeat fa-border" aria-hidden="true"></i>
+  Redo</button>
+    </div>
+    <p>Font</p>
+    <div class="btn-group">
+      <button><i class="fa fa-font fa-border" aria-hidden="true"></i> Serif</button>
+      <button><span class="sansserif-icon">A</span> Sans Serif</button>
+    </div>
+    <p>Text Color</p>
+    <div class="btn-group">
+      <button class="blue"><i class="fa fa-square fa-border" aria-hidden="true"></i> Blue</button>
+      <button class="red"><i class="fa fa-square fa-border" aria-hidden="true"></i> Red</button>
+    </div>
+    <p>Decoration</p>
+    <div class="btn-group">
+      <button class="bold"><i class="fa fa-bold fa-border" aria-hidden="true"></i> Bold</button>
+      <button class="italic"><i class="fa fa-italic fa-border" aria-hidden="true"></i> Italic</button>
+    </div>
+    <p>List</p>
+    <div class="btn-group">
+      <button><i class="fa fa-list-ol fa-border" aria-hidden="true"></i>
+ Numbered</button>
+      <button><i class="fa fa-list-ul fa-border" aria-hidden="true"></i>
+ Ordered</button>
+    </div>
+    <p>Header</p>
+    <div class="btn-group">
+      <button><i class="fa fa-header fa-lg fa-border" aria-hidden="true"></i>
+ Title</button>
+      <button><i class="fa fa-header fa-border" aria-hidden="true"></i>
+ Subtitle</button>
+    </div>
+  </div> <!-- /editor panel -->
 
 <!-- Container to hold what is sent from Oz -->
-<div class="container" id="container"></div>
-
+<div class="oz-page two-thirds column" id = "container"></div>
+</div>
 <!-- Dependencies -->
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
