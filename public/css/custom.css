@@ -1,0 +1,66 @@
+html, body, .container {
+  background: #E3E3E3;
+  height: 100%;
+  overflow-y: hidden;
+}
+.container {
+  margin-top: 3%;
+}
+.oz-page {
+  background-color: #fff;
+  height: 90%;
+  padding: 1em 2em;
+  -webkit-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
+  -moz-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
+  box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
+}
+.oz-editor {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #eee;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+}
+p {
+  margin-bottom: .5em;
+}
+button {
+  border: none;
+  background: #fff;
+  padding: 0 15px;
+}
+.sansserif-icon {
+padding: 0 .3em;
+    font-size: 1.1em;
+
+    border: solid .08em #eee;
+    border-radius: .1em;
+    font-weight: 400;
+}
+.blue i {
+  color: blue;
+}
+.red i {
+  color: red;
+}
+.linenumber .line {
+    position: relative;
+    margin-left: 32px; /* 16 * 2*/
+}
+.linenumber .line:before {
+    content: attr(index) '';
+    position: absolute;
+    right: 25px;
+    margin-right: 100%;
+    width: 1em;
+    font-size: 16px;
+    text-align: center;
+    color: #ddd;
+    vertical-align: center;
+    border-right: 1px solid #ddd;
+}
+text-line {
+  display: inline-block !important;
+}
