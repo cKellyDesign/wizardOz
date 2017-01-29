@@ -9,7 +9,7 @@ html, body, .container {
 .oz-page {
   background-color: #fff;
   height: 90%;
-  padding: 1em 2em;
+  padding: 1em 2em 1em 5em;
   -webkit-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
   -moz-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
   box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
@@ -52,13 +52,11 @@ padding: 0 .3em;
 .linenumber .line:before {
     content: attr(index) '';
     position: absolute;
-    right: 25px;
-    margin-right: 100%;
-    width: 1em;
+    left: -80px;
+    margin-left: -15px;
+    width: 1.5em;
     font-size: 16px;
-    text-align: center;
     color: #ddd;
-    vertical-align: center;
     border-right: 1px solid #ddd;
 }
 text-line {
