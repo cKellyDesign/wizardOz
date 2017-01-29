@@ -61,6 +61,22 @@ padding: 0 .3em;
     vertical-align: center;
     border-right: 1px solid #ddd;
 }
+
 text-line {
   display: inline-block !important;
+}
+
+
+/* OZ STYLING */
+body.oz #container {
+  display: block;
+  margin: 50px;
+}
+
+#alertError.on {
+  background-color: green;
+}
+
+#alertError.off {
+  background-color: red;
 }

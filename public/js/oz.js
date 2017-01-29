@@ -18,10 +18,27 @@ function Oz () {
 		self.socket.emit('content', data);
 	}
 
+	this.toggleAlert = function (e) {
+		e.preventDefault();
+
+		if ( $('#alertError').hasClass('off') ) {
+			$('#alertError').removeClass('off').addClass('on');
+			self.socket.emit('turn-on-alert');
+		} else {
+			$('#alertError').removeClass('on').addClass('off');
+			self.socket.emit('turn-off-alert');
+		}
+
+
+
+	}
+
 	$('#update').on('click', function (e) {
 		e.preventDefault();
 		self.copyMarkup();
 	});
+
+	$('#alertError').on('click', this.toggleAlert);
 
 }
 

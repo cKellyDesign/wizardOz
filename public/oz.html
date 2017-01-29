@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Test Proto</title>
+	<meta charset="UTF-8">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+
+    <title>VeeTee: Voice Text Editor</title>
    
 </head>
-<body>
+<body class="oz">
 
 <!-- This is the document the facilitator to control what the participant sees -->
 
 <!-- Container which will have the markup to be sent to Dorthy -->
-<div class="container" id="container">
+<div class="" id="container">
 	<p>Todo</p>
 	<p>This is a to do list!</p>
 </div>
 
-<textarea name='editor' id='editor'>Hello World!</textarea>
+<div class="container">
+	<div class="two-thirds column">
+		<textarea name='editor' id='editor'>Hello World!</textarea>
+	</div>
+	<div class="one-third column">
+		<div class="btn-group">
+			<button id="update">Update</button>
+			<button id="alertError" class="off">Error</button>
+		</div>
+	</div>
+</div>
 
-<button id="update">Update</button>
+
+
+
 
 <!-- Dependencies -->
 <script
