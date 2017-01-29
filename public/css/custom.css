@@ -45,3 +45,22 @@ padding: 0 .3em;
 .red i {
   color: red;
 }
+.linenumber .line {
+    position: relative;
+    margin-left: 32px; /* 16 * 2*/
+}
+.linenumber .line:before {
+    content: attr(index) '';
+    position: absolute;
+    right: 25px;
+    margin-right: 100%;
+    width: 1em;
+    font-size: 16px;
+    text-align: center;
+    color: #ddd;
+    vertical-align: center;
+    border-right: 1px solid #ddd;
+}
+text-line {
+  display: inline-block !important;
+}

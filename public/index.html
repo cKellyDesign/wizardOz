@@ -15,6 +15,8 @@
     <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://use.fontawesome.com/8266393845.js"></script>
+  <script src="//cdn.jsdelivr.net/lining.js/0.3.2/lining.min.js"></script>
+
 
   <title>VeeTee: Voice Text Editor</title>
 </head>
@@ -63,7 +65,13 @@
   </div> <!-- /editor panel -->
 
 <!-- Container to hold what is sent from Oz -->
-<div class="oz-page two-thirds column" id = "container"></div>
+<div class="oz-page two-thirds column linenumber" id = "container" data-lining>
+<ol>
+  <li>some stuff</li>
+  <li>some stuff</li>
+  <li>some stuff</li>
+</ol>
+</div>
 </div>
 <!-- Dependencies -->
 <script
