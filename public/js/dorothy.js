@@ -4,6 +4,9 @@ function Dorothy () {
 	// initialize IO
 	this.socket = io();
 
+	this.container = document.getElementById('container');
+	this.liner = window.lining && window.lining(this.container);
+
 	// When connected, send dorthy event
 	this.socket.on('connect', function() {
 		self.socket.emit('dorothy');
@@ -12,6 +15,8 @@ function Dorothy () {
 	// Listen for update to content
 	this.socket.on('update', function (payload) {
 		$('#container').html(payload);
+		self.liner.unlining();
+		self.liner.relining();
 	});
 }
 
