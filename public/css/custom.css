@@ -107,3 +107,7 @@ body.oz #container {
 #lining.off {
   background-color: red;
 }
+
+#update {
+  width: 100%;
+}
