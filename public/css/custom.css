@@ -66,6 +66,16 @@ text-line {
   display: inline-block !important;
 }
 
+#alertBox {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: red;
+  color: white;
+}
+
+#alertBox p {
+  margin-bottom: 0;
+}
 
 /* OZ STYLING */
 body.oz #container {
