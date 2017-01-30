@@ -39,5 +39,23 @@ io.sockets.on('connection', function (socket) {
 	// Listen for Dorothy to send her content
 	socket.on('dorothy', function () {
 		io.sockets.emit('update', content);
-	})
+	});
+
+
+
+	socket.on('turn-off-alert', function () {
+		io.sockets.emit('turn-off-alert');
+	});
+
+	socket.on('turn-on-alert', function () {
+		io.sockets.emit('turn-on-alert');
+	});
+
+	socket.on('turn-off-lining', function () {
+		io.sockets.emit('turn-off-lining');
+	});
+
+	socket.on('turn-on-lining', function () {
+		io.sockets.emit('turn-on-lining');
+	});
 });

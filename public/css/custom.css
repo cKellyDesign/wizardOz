@@ -9,7 +9,7 @@ html, body, .container {
 .oz-page {
   background-color: #fff;
   height: 90%;
-  padding: 1em 2em 1em 5em;
+  padding: 1em 2em 1em 4em;
   -webkit-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
   -moz-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
   box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
@@ -52,13 +52,62 @@ padding: 0 .3em;
 .linenumber .line:before {
     content: attr(index) '';
     position: absolute;
-    left: -80px;
+    left: -52px;
     margin-left: -15px;
     width: 1.5em;
     font-size: 16px;
     color: #ddd;
     border-right: 1px solid #ddd;
 }
+ul li .line:before {
+  left: -80px !important;
+}
+ol li .line:before {
+  left: -68px !important;
+}
+
 text-line {
   display: inline-block !important;
+}
+
+#alertBox {
+  padding-top: 0;
+  padding-bottom: ;
+  background-color: red;
+  color: white;
+
+  overflow: hidden;
+  height: 0px;
+  transition: all .3s;
+}
+
+#alertBox.active {
+  height: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#alertBox p {
+  margin-bottom: 0;
+  padding-left: 21px;
+}
+
+/* OZ STYLING */
+body.oz #container {
+  display: block;
+  margin: 50px;
+}
+
+#alertError.on,
+#lining.on {
+  background-color: green;
+}
+
+#alertError.off,
+#lining.off {
+  background-color: red;
+}
+
+#update {
+  width: 100%;
 }
