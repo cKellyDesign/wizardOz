@@ -1,15 +1,14 @@
 html, body, .container {
   background: #E3E3E3;
   height: 100%;
-  overflow-y: hidden;
+/*  overflow-y: hidden;*/
 }
 .container {
   margin-top: 3%;
 }
 .oz-page {
   background-color: #fff;
-  height: 90%;
-  padding: 1em 2em;
+  padding: 1em 2em 1em 4em;
   -webkit-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
   -moz-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
   box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
@@ -52,14 +51,18 @@ padding: 0 .3em;
 .linenumber .line:before {
     content: attr(index) '';
     position: absolute;
-    right: 25px;
-    margin-right: 100%;
-    width: 1em;
+    left: -52px;
+    margin-left: -15px;
+    width: 1.5em;
     font-size: 16px;
-    text-align: center;
     color: #ddd;
-    vertical-align: center;
     border-right: 1px solid #ddd;
+}
+ul li .line:before {
+  left: -80px !important;
+}
+ol li .line:before {
+  left: -68px !important;
 }
 
 text-line {
@@ -89,15 +92,21 @@ text-line {
 }
 
 /* OZ STYLING */
-body.oz #container {
+.oz {
   display: block;
   margin: 50px;
 }
 
-#alertError.on {
+#alertError.on,
+#lining.on {
   background-color: green;
 }
 
-#alertError.off {
+#alertError.off,
+#lining.off {
   background-color: red;
+}
+
+#update {
+  width: 100%;
 }

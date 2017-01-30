@@ -16,31 +16,32 @@
 </head>
 <body class="oz">
 
-<!-- This is the document the facilitator to control what the participant sees -->
-
-<!-- Container which will have the markup to be sent to Dorthy -->
-<div class="" id="container">
-	<p>Todo</p>
-	<p>This is a to do list!</p>
-</div>
-
-<div class="container">
+<div class="row">
+  <div class="one-third column" id="container"></div>
 	<div class="two-thirds column">
-		<textarea name='editor' id='editor'>Hello World!</textarea>
-	</div>
-	<div class="one-third column">
-		<div class="btn-group">
-			<button id="update">Update</button>
-			<button id="alertError" class="off">Error OFF</button>
-			<button id="lining" clas="on">Lining ON</button>
-		</div>
+    <div class="btn-group">
+      <button id="alertError" class="off">Error OFF</button>
+      <button id="lining" class="off">Lining OFF</button>
+    </div>
+    <button class="btn" id="update">Update</button>
+		<textarea name='editor' id='editor'>
+      <p>Daily Office To-Do List</p>
+      <p>&nbsp;</p>
+      <p>Morning</p>
+      <p>Turn on lights</p>
+      <p>Bring in trash cans</p>
+      <p>Put on coffee pot</p>
+      <p>&nbsp;</p>
+      <p>Evening</p>
+      <p>Take out trash cans</p>
+      <p>Empty and clean coffee pot</p>
+      <p>Turn off lights</p>
+      <p>&nbsp;</p>
+      <p>Don&#39;t forget! Please make sure you set the alarm before you leave for the evening.</p>
+      <p>- Management</p>
+    </textarea>
 	</div>
 </div>
-
-
-
-
-
 <!-- Dependencies -->
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
