@@ -67,14 +67,25 @@ text-line {
 }
 
 #alertBox {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 0;
+  padding-bottom: ;
   background-color: red;
   color: white;
+
+  overflow: hidden;
+  height: 0px;
+  transition: all .3s;
+}
+
+#alertBox.active {
+  height: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 #alertBox p {
   margin-bottom: 0;
+  padding-left: 21px;
 }
 
 /* OZ STYLING */

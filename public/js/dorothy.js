@@ -2,11 +2,11 @@ function Dorothy () {
 	var self = this;
 
 	this.turnOnAlert = function () {
-		$('body').css('background-color', 'red');
+		$('#alertBox').addClass('active')
 	};
 
 	this.turnOffAlert = function () {
-		$('body').css('background-color', 'white');
+		$('#alertBox').removeClass('active')
 	};
 
 
