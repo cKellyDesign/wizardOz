@@ -92,10 +92,12 @@ body.oz #container {
   margin: 50px;
 }
 
-#alertError.on {
+#alertError.on,
+#lining.on {
   background-color: green;
 }
 
-#alertError.off {
+#alertError.off,
+#lining.off {
   background-color: red;
 }

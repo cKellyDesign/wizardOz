@@ -47,6 +47,8 @@ function Dorothy () {
 	this.socket.on('update', this.updateContainer);
 	this.socket.on('turn-on-alert', this.turnOnAlert);
 	this.socket.on('turn-off-alert', this.turnOffAlert);
+	this.socket.on('turn-on-lining', this.turnOnLining);
+	this.socket.on('turn-off-lining', this.turnOffLining);
 }
 
 window.dorothy = new Dorothy();

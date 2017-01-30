@@ -30,12 +30,26 @@ function Oz () {
 		}
 	};
 
+	this.toggleLining = function (e) {
+		e.preventDefault();
+
+		if ( $('#lining').hasClass('off') ) {
+			$('#lining').removeClass('off').addClass('on').text('Lining ON');
+			self.socket.emit('turn-on-lining');
+		} else {
+			$('#lining').removeClass('on').addClass('off').text('Lining OFF');
+			self.socket.emit('turn-off-lining');
+		}
+	};
+
 	$('#update').on('click', function (e) {
 		e.preventDefault();
 		self.copyMarkup();
 	});
 
 	$('#alertError').on('click', this.toggleAlert);
+	$('#lining').on('click', this.toggleLining);
+
 }
 
 window.oz = new Oz();
