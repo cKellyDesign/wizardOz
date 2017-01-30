@@ -1,14 +1,13 @@
 html, body, .container {
   background: #E3E3E3;
   height: 100%;
-  overflow-y: hidden;
+/*  overflow-y: hidden;*/
 }
 .container {
   margin-top: 3%;
 }
 .oz-page {
   background-color: #fff;
-  height: 90%;
   padding: 1em 2em 1em 4em;
   -webkit-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
   -moz-box-shadow: 3px 3px 7px 0px rgba(179,179,179,1);
@@ -93,7 +92,7 @@ text-line {
 }
 
 /* OZ STYLING */
-body.oz #container {
+.oz {
   display: block;
   margin: 50px;
 }

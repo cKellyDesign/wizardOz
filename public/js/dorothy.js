@@ -1,7 +1,7 @@
 function Dorothy () {
 	var self = this;
 
-	this.doLining = true;
+	this.doLining = false;
 
 	this.turnOnAlert = function () {
 		$('#alertBox').addClass('active')
